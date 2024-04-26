@@ -1,0 +1,17 @@
+device: 'mps' # 'mps' (Apple Silicon) or 'cuda' or 'cpu'
+epoch: 10
+
+data:
+  csv_path: 'data/front_v1.csv'
+  image_path: 'front_path'
+  task: 'tipe' # 'seimbang' or 'simetris' or 'transversal' or 'profil' or 'nasolabial' or 'mentolabial' or 'segaris' or 'bukal' or 'kurva' or 'garis'
+  resolutions: [224, 224]
+
+model:
+  model_key: 'mobilenetv3_large_100'
+  learning_rate: 0.0001
+  weight_decay: 0.0005
+  T_max: 10
+  fc_input_num: 288
+  backbone: 'cnn'
+  num_classes: 3

@@ -1,0 +1,9 @@
+timm
+torch
+pandas
+tqdm
+torchmetrics
+pytorch_lightning
+scikit-learn
+opencv-python
+yaml
